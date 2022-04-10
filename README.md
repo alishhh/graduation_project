@@ -1,2 +1,2 @@
-# Dariger.k
+# Dariger.kz
 Recommendation system for choosing a personal doctor

@@ -1,0 +1,42 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main img {
+    width: 350px;
+    margin-bottom: 50px;
+}
+.main input {
+    background: #FFFFFF;
+    /* Sky/Light */
+
+    border: 1px solid #E3E5E6;
+    border-radius: 8px;
+
+    width:  350px;
+}
+.btn {
+    background: #3D80FF;
+    border-radius: 48px;
+    padding: 12px 0;
+    width: 350px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+form p {
+    text-align: center;
+}
+form a {
+    text-decoration: none;
+}
+label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+}

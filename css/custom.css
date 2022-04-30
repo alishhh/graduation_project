@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    color: #1E0F37;
+    text-align: center;
+}
+/*navbar*/
+.navbar {
+    padding-top: 35px;
+    font-size: 18px;
+    /* ШРИФТЫ */
+}
+.first-nav {
+    margin: 0 auto;
+}
+.nav-item {
+    margin-right: 30px;
+}
+.sec-nav {
+    justify-content: right;
+}
+.logo {
+    width: 80%;
+}
+.get-started {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px;
+    border: none;
+    background: #EDECEE;
+    border-radius: 900px;
+    margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+    .sec-nav {
+        display: block !important;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.h2 {
+    color: #3D80FF;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 97px;
+    margin-bottom: 35px;
+}
+.save {
+    border: 3px solid #3D80FF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: white;
+    padding: 15px 25px;
+    color: #3D80FF;
+    font-size: 30px;
+    text-align: center;
+}
+/*footer*/
+footer {
+    margin-top: 100px;
+    padding: 60px 0;
+    background: #3D80FF;
+}
+
+footer a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+footer p {
+    color: white;
+    font-size: 14px;
+}
+.black {
+    font-size: 20px;
+    color: #1E0F37;
+}
+footer li {
+    margin-bottom: 15px;
+}

@@ -1,7 +1,7 @@
 .sec1 h2 {
     margin: 100px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .sec1 h2 {
         font-size: 60px;
     }
@@ -166,12 +166,12 @@
     box-sizing: border-box;
     border-radius: 20px;
     padding: 15px;
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .o-header {
         display: flex;
         flex-direction: column;

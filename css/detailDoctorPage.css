@@ -1,26 +1,5 @@
 
-.main {
-    margin: 150px 0;
-}
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-sec {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 1px solid #b4b4b4;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-sec img {
-    width: 80%;
-}
-.info {
+.photo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,25 +8,20 @@
 .stars {
     width: 150px;
 }
-.info p {
+.photo p {
     font-size: 20px;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 20px;
+    color: #3D80FF;
 }
-.loc {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.go-center {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.go-center h2 {
+.info h2 {
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
 }
-.go-center .gray {
+.info .gray {
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
@@ -56,19 +30,56 @@
 
     color: #848484;
 }
+.loc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .loc img {
     height: 50px;
 }
 .loc .blue-text {
+    color: #3D80FF;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
 }
+.map-sec {
+    display: flex;
+    align-items: center;
+}
+.price-info {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+}
+.price-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.price {
+    margin-left: 15px;
+    color: #3D80FF;
+}
+.price-sec button{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    color: white;
+    background: #3D80FF;
+    border-radius: 24.5px;
+}
+
+
 .about {
+    background: #FFFFFF;
     box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    padding: 50px 20px;
-    margin-bottom: 100px;
+    padding: 25px;
 }
 .about h3 {
     font-weight: 500;
@@ -79,28 +90,88 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
+    color: #000000;
 }
-.services {
+
+.schedule {
     background: #FFFFFF;
     box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    padding: 30px;
+    padding: 25px;
 }
-.services h3 {
+.schedule h3 {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
 }
-.services li {
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ferial {
+    background: #3D80FF;
+    border-radius: 20px;
+    color: white;
+    padding: 18px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+
+.ferial p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.holiday {
+    background: #FFFFFF;
+    border: 3px solid #3D80FF;
+    border-radius: 20px;
+    padding: 18px 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+.holiday p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+}
+.gray {
+    color: gray;
+}
+
+
+.ill {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.ill h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.ill ul li a {
+    text-decoration: none;
+    font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 29px;
-    color: #3D80FF;
 }
-.services .more {
-    width: 50%;
-    margin: 0 auto;
-}
+
 .otziv {
     background: #FFFFFF;
     box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
@@ -140,6 +211,7 @@
     display: flex;
     justify-content: center;
     align-self: center;
+    background-color: white;
 }
 .all {
     padding: 12px 30px;
@@ -150,7 +222,7 @@
 }
 .plus {
     padding: 8px 30px;
-    background-color: white;
+
     border: 1px solid #A3DB5C;
     box-sizing: border-box;
     border-radius: 20px;
@@ -162,7 +234,7 @@
 }
 .minus {
     padding: 8px 30px;
-    background-color: white;
+
     border: 1px solid #B40000;
     box-sizing: border-box;
     border-radius: 20px;
@@ -177,34 +249,52 @@
     background: #3D80FF;
     border-radius: 20px;
     padding: 15px;
-    border: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    border: none;
 }
 .otziv .enter-o {
     width: 50%;
     margin: 0 auto;
 }
-.map {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    padding: 30px;
-}
-.map h3 {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-}
-.map-sec {
+.more {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+    border: 2px solid #3D80FF;
 }
-
 @media screen and (max-width: 768px) {
+    .map-sec {
+        flex-direction: column;
+    }
+    .price-info {
+        margin-top: 30px;
+    }
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+    .second {
+        flex-direction: column;
+    }
+    .ferial {
+        padding: 18px 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .holiday {
+        padding: 18px 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
     .o-header {
         display: flex;
         flex-direction: column;
@@ -215,7 +305,6 @@
         justify-content: space-between;
     }
     .all {
-        border: none;
         padding: 12px 30px;
         background: #3D80FF;
         border-radius: 20px;
@@ -231,7 +320,7 @@
         box-sizing: border-box;
         border-radius: 20px;
         color: #A3DB5C;
-        background-color: white;
+
     }
     .plus img, .minus img {
         margin-left: 0;
@@ -243,34 +332,6 @@
         box-sizing: border-box;
         border-radius: 20px;
         color: #B40000;
-        background-color: white;
     }
-    .moreMedia {
-        width: 80%;
-        margin: 20px auto;
-    }
-    .go-center h2 {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 77px;
-    }
-    .main {
-        margin: 50px 0;
-    }
-    .profile {
-        font-size: 1.4em;
-    }
-    .location {
-        margin-bottom: 40px;
-    }
-    .date {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .type {
-        width: 100%;
-    }
-    .blue-type {
-        width: 100%;
-    }
+
 }

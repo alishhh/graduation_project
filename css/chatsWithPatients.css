@@ -37,7 +37,7 @@
     margin: 10px 10px 0 15px;
     color: #848484;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .crd {
         display: flex;
         flex-direction: column;

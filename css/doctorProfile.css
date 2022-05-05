@@ -35,7 +35,7 @@
     line-height: 48px;
     color: #000000;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .prof h3 {
         font-size: 36px;
     }
@@ -56,6 +56,7 @@
 }
 .name {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -102,6 +103,16 @@
 .form-check {
     display: flex;
     justify-content: left;
+    align-items: center;
+}
+
+.form-check input[type=time] {
+    width: 100px;
+}
+.times {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .problem h3 {
@@ -174,17 +185,17 @@
     margin-right: 10px;
 }
 .schedule .form-check{
-    margin-right: 35vw;
+    /*margin-right: 100px;*/
 }
 .stazh {
-    margin-right: 25vw;
+    /*margin-right: 25vw;*/
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .stazh {
         margin-right: 0;
     }
     .schedule .form-check{
-        margin-right: 15vw;
+        /*margin-right: 15vw;*/
     }
 }
 .services {
@@ -206,9 +217,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-right: 24vw;
+    /*padding-right: 24vw;*/
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .price-sec {
         padding-left: 20px;
         padding-right: 0;

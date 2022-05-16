@@ -97,14 +97,32 @@
 }
 .sort {
     background: #FFFFFF;
-    border: 2px solid #000000;
+    border: 2px solid #2a44ad;
     box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    color: white;
+    background: #3D80FF;
+    border: 2px solid #2a44ad;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#mySearch::placeholder {
+    color: white;
+}
+
+
+
+
 .priem {
     background: #EDECEE;
     border: 2px solid #000000;

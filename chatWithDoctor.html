@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/userProfile.css">
+    <link rel="stylesheet" href="css/chatWithDoctor.css">
     <title>Dariger</title>
 </head>
 <body>
@@ -22,10 +22,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 first-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="doctors.html">Doctors</a>
+                    <a class="nav-link active" aria-current="page" href="doctors.html">Doctors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="doctors.html">Medical Centers</a>
+                    <a class="nav-link" href="#">Medical Centers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Services</a>
@@ -45,75 +45,47 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="image mt-5">
-        <img src="images/profile-user.png" alt="">
-        <div class="mb-3 mt-3">
-<!--            <label for="formFile" class="form-label">Загрузить фотографию</label>-->
-<!--            <input class="form-control" type="file" id="formFile">-->
-            <button>Загрузить фотографию</button>
+<div class="main">
+    <div class="container row main-sec">
+        <div class="col-xl-5 info">
+            <div class="img-sec mb-4">
+                <img class="center-img" src="images/profile-chat.png" alt="">
+            </div>
+        </div>
+        <div class="col-xl-7 go-center">
+            <h2>Татьяна Эйдельман</h2>
+            <p class="gray">врач-эндокринолог</p>
+            <div class="loc mt-5">
+                <img src="images/location.svg" alt="">
+                <p class="blue-text">Медицинский Центр "Emirmed"
+                    ул. Манаса, 59 (уг. Жандосова)</p>
+            </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="private mt-5">
-        <h3>Личные данные</h3>
-        <form>
-            <div class="name mt-4">
-                <p>Имя</p>
-                <input type="text" placeholder="Аскар" class="form-control" aria-label="First name">
+    <div class="chat">
+        <div class="chat-header mb-3">
+            <h3>Чат с врачом</h3>
+            <img src="images/film.svg" alt="">
+        </div>
+        <div class="chat-window">
+            <div class="dd">
+                <div class="dd-sec">Добрый день!</div>
             </div>
-            <div class="name mt-3">
-                <p>Фамилия</p>
-                <input type="text" placeholder="Аскаров" class="form-control" aria-label="Last name">
+            <div class="priv">
+                <div class="priv-sec">Приветствую!</div>
             </div>
-            <div class="name mt-3">
-                <p>E-mail</p>
-                <input type="text" placeholder="askar@gmail.com" class="form-control" aria-label="email">
-            </div>
-            <div class="name mt-3">
-                <p>Телефон</p>
-                <input type="text" placeholder="+7 777 777 77 77" class="form-control" aria-label="Tele">
-            </div>
-            <div class="rt mt-3">
-                <p>Пол</p>
-                <div class="ratios">
-                    <div class="form-check">
-                        <input class="mx-2 form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Мужской
-                        </label>
-                    </div>
-                    <div class="form-check mx-3">
-                        <input class="mx-2 form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Женский
-                        </label>
-                    </div>
+        </div>
+        <div class="chat-form mt-3">
+            <form>
+                <div class="">
+                    <input placeholder="Введите сообщение" type="message" class="form-control" id="message" aria-describedby="message">
                 </div>
-            </div>
-            <div class="name mt-3">
-                <p>День рождения</p>
-                <input type="text" class="form-control" placeholder="12-03-2000" aria-label="BirthDay">
-            </div>
-        </form>
-    </div>
-    <div class="problem mt-5">
-        <h3>Вы можете написать проблему,  а мы проанализируем и предложим врача</h3>
-        <div class="problem-sec mt-5">
-            <p>Опишите свою проблему</p>
-            <div class="form-group mt-4">
-                <textarea placeholder="Lorem.." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        </div>
-        <h3 class="mt-5">История проблем</h3>
-        <div class="history mt-4">
-            <p>Lorem ipsum dolor sit amet, consectetu...</p>
-            <p class="date">25.01.2022</p>
-        </div>
-        <div class="go-center mt-5">
-            <button>Сохранить</button>
-
+                <a href="chatWithDoctor.html">
+                    <img src="images/send.svg" alt="send">
+                </a>
+            </form>
         </div>
     </div>
 </div>
@@ -157,6 +129,5 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

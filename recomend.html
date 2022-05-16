@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/recomend.css">
+    <link rel="stylesheet" href="css/doctors.css">
     <title>Dariger</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             </ul>
             <ul class="navbar-nav flex sec-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="signin.html">Login</a>
                 </li>
                 <li class="nav-item">
                     <button class="get-started">Get Started</button>
@@ -281,29 +282,72 @@
             </div>
             <div class="col-xl-4">
                 <div class="params">
-                    <div class="sort mt-3">
-                        <p>Сортировать по рейтингу</p>
-                        <img src="images/arrow.svg" alt="">
+                    <div class="mt-3">
+                        <div class=" input-group mt-3">
+                            <select class="sort custom-select" id="inputGroupSelect02">
+                                <option selected>Специалист</option>
+                                <option value="1">Врач-эндокринолог</option>
+                                <option value="2">Врач-терапевт</option>
+                                <option value="3">Врач-онколог</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="priem mt-3">
-                        <div class="light">Прием в клинике</div>
-                        <div class="pad10">Онлайн консультация</div>
-                        <div class="pad10">Выезд на дом</div>
+                    <div class=" input-group mt-3">
+                        <select class="sort custom-select" id="inputGroupSelect02">
+                            <option selected>Сортировать по ...</option>
+                            <option value="1">Сортировать по рейтингу</option>
+                            <option value="2">Сортировать по алфавиту</option>
+                            <option value="3">Сортировать по цене</option>
+                        </select>
                     </div>
-                    <div class="pricex mt-5">
+                    <div class="price mt-4">
                         <p>Стоимость консультации</p>
-                        <img class="mt-3" src="images/price.svg" alt="">
-                        <p class="pricex-text mt-3">от <span class="dark">2000</span> - до <span class="dark">20 000</span></p>
+                        <input class="form-control mt-3" type="text" placeholder="От 2000">
+                        <input class="form-control mt-3" type="text" placeholder="До 20 000">
+                    </div>
+                    <div class="pricex mt-4">
                         <p class="mt-3">Время консультации</p>
                         <form class="mt-3">
                             <input class="form-control" type="datetime-local" placeholder="Выберите время">
                             <button class="sbt-btn mt-xl-2" type="submit">Записаться</button>
                         </form>
                     </div>
-                    <div class="types row mt-5">
-                        <div class="type col-xl-5">Открыто сейчас</div>
-                        <div class="type col-xl-5 mx-xl-3">Прием детей</div>
-                        <div class="type mt-3 blue-type">Работает в выходные</div>
+
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="inClinic">
+                        <label class="form-check-label" for="inClinic">
+                            Прием в клинике
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="onlineCon">
+                        <label class="form-check-label" for="onlineCon">
+                            Онлайн консультация
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="outside">
+                        <label class="form-check-label" for="outside">
+                            Выезд на дом
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="openNow">
+                        <label class="form-check-label" for="openNow">
+                            Открыто сейчас
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="children" checked>
+                        <label class="form-check-label" for="children">
+                            Прием детей
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="holiday" checked>
+                        <label class="form-check-label" for="holiday">
+                            Работает в выходные
+                        </label>
                     </div>
                 </div>
             </div>

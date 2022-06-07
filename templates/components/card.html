@@ -1,0 +1,46 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/doctors.css') }}">
+    <title>Dariger</title>
+</head>
+
+<body>
+
+<div class="profile row mb-5">
+    <div class="col-xl-2 profile-flex">
+        <img src="{{ url_for('static', path='/images/profile-img.png') }}" alt="">
+        <img src="{{ url_for('static', path='/images/stars.svg') }}" alt="">
+        <p class="blue-text">(173 отзыва)</p>
+    </div>
+    <div class="col-xl-5 profile-flex">
+        <p class="name mb-1">{{obj.fullname}}</p>
+        <p class="mb-3 gray-text">{{obj.spec}}</p>
+        <div class="location">
+            <img src="{{ url_for('static', path='/images/location.svg') }}" alt="">
+            <p>Медицинский Центр "Emirmed"
+                ул. Манаса, 59 (уг. Жандосова)</p>
+        </div>
+    </div>
+    <div class="col-xl-5">
+        <form action="">
+            <input  class="form-control" type="datetime-local" placeholder="Выберите время">
+        </form>
+<!--        <p class="card-text">О враче: {{obj.description[:60]}}</p>-->
+        <p class="card-text">Лечение заболеваний: {{obj.tod}}</p>
+        <div class="price-sec">
+            <p>Cтоимость приема:</p>
+            <p class="blue-text">{{obj.salary}}</p>
+        </div>
+    </div>
+     <a href="/detail/{{obj.id}}" class="btn btn-primary">Read More</a>
+</div>
+
+</body>

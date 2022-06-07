@@ -1,0 +1,136 @@
+
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image img {
+    width: 230px;
+}
+.image button {
+    background: #3D80FF;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 22px;
+    border: none;
+    color: white;
+}
+.private {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.private h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+    color: #848484;
+
+}
+.name input {
+    width: 60%;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+}
+.rt {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rt p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    /* identical to box height */
+
+
+    color: #848484;
+
+}
+.ratios {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.form-check {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.problem h3 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    color: #3D80FF;
+}
+.problem-sec {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.problem-sec p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+}
+.problem-sec textarea {
+    background: #D8D8D8;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px;
+}
+.history {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 35px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.date {
+    color: #848484;
+}
+.problem button {
+    border: 3px solid #3D80FF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: white;
+    padding: 15px 25px;
+    color: #3D80FF;
+    font-size: 30px;
+    text-align: center;
+}
+.go-center {
+    display: flex;
+    justify-content: center;
+}
+

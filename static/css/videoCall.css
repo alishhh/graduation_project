@@ -1,0 +1,35 @@
+.main {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.window {
+    background: #EDECEE;
+    border: 3px solid #3D80FF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img {
+    width: 60px;
+}
+.profile-img {
+    width: 250px;
+    height: 250px;
+}
+.main h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}

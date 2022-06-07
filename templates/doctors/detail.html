@@ -1,0 +1,165 @@
+{% extends "shared/base.html" %}
+
+{% block title %}
+  <title>Doctor Detail</title>
+{% endblock %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/detailDoctorPage.css') }}">
+    <title>Dariger</title>
+</head>
+<body>
+<html>
+
+<div class="container">
+    <div class="main">
+        <div class="profile mb-5 row">
+            <div class="photo col-xl-4">
+                <img class="mb-3" src="{{ url_for('static', path='/images/profile-chat.png') }}" alt="">
+                <img class="stars mb-2" src="{{ url_for('static', path='/images/stars.svg') }}" alt="">
+                <p class="blue-text">(173 отзыва)</p>
+            </div>
+            <div class="info col-xl-8">
+                <h2>{{doctor.fullname}}</h2>
+                <p class="gray">{{doctor.spec}}</p>
+                <div class="loc mt-5">
+                    <img src="{{ url_for('static', path='/images/location.svg') }}" alt="">
+                    <p class="blue-text mx-3">Медицинский Центр "BBH Best Bernar Hospital" <br>
+                        ул. Манаса, 59 (уг. Жандосова)</p>
+                </div>
+                <div class="mt-5 map-sec">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69190067c8394e7676d5b5ad0800d2c75bf15f52b33f1e2ce37e58e40a3c81a1&amp;source=constructor" width="350" height="200" frameborder="0"></iframe>
+                    </div>
+                    <div class="price-sec mx-xl-5">
+                        <div class="price-info">
+                            <p>Первичный прием: <span class="price">{{doctor.salary}}</span></p>
+                            <p>Вторичный прием: <span class="price">3 000тг</span></p>
+                        </div>
+                        <button class="mt-3">Показать номер</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about mb-5">
+            <h3 class="mb-4">О Враче</h3>
+            <p>{{doctor.description}}</p>
+        </div>
+        <div class="schedule mb-5">
+            <h3>График работы врача</h3>
+            <div class="timings mt-5">
+                <div class="first mb-3">
+                    <div class="ferial">
+                        <p>Пн: 12:00-19:00</p>
+                    </div>
+                    <div class="ferial">
+                        <p>Вт: 12:00-19:00</p>
+                    </div>
+                    <div class="ferial">
+                        <p>Ср: 12:00-19:00</p>
+                    </div>
+                    <div class="ferial">
+                        <p>Чт: 12:00-19:00</p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="ferial">
+                        <p>Пт: 12:00-19:00</p>
+                    </div>
+                    <div class="holiday">
+                        <p>Сб: <span class="gray">Выходной</span></p>
+                    </div>
+                    <div class="holiday">
+                        <p>Вск: <span class="gray">Выходной</span></p>
+                    </div>
+                    <div class="holiday last">
+                        <p>Вск: <span class="gray">Выходной</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ill">
+            <h3>Лечение заболеваний</h3>
+          <tr>
+            <th scope="row">tod</th>
+            <td>{{doctor.tod}}</td>
+          </tr>
+        </div>
+
+
+        <div class="otziv mt-5">
+            <div class="o-header">
+                <div class="o-info">
+                    <h3>Отзывы</h3>
+                    <p>113 отзывов</p>
+                </div>
+                <div class="o-types">
+                    <button class="all">Все отзывы</button>
+                    <button class="plus mx-3">Положительные <img src="images/happy-face.svg" alt=""></button>
+                    <button class="minus">Отрицательные <img src="images/sad-face.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="o-body mt-5">
+                <p class="name">Берик</p>
+                <img  class="mb-3" src="images/stars.svg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <button class="more mt-5">Показать еще</button>
+            <button class="enter-o mt-2">Оставить отзыв</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Пациенту</p></li>
+                    <li><a href="">Врачи</a></li>
+                    <li><a href="">Медцентры</a></li>
+                    <li><a href="">Специализации</a></li>
+                    <li><a href="">Задать вопрос врачу</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Врачу</p></li>
+                    <li><a href="">Личный кабинет</a></li>
+                    <li><a href="">Профинформация</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Медцентр</p></li>
+                    <li><a href="">Данные медцентра</a></li>
+                    <li><a href="">Врачи медцентра</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <p>
+                    Есть ошибка? Сообщите нам <br><br>
+                    *Вся информация на сайте носит информационный характер и опубликована
+                    в целях информирования пользователей о возможности оказания медицинской помощи
+                    и медицинских услуг пациенту. Для постановки диагноза, выявления возможных
+                    противопоказаний и назначения лечения, необходима очная консультация с врачом.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+{% endblock %}
+

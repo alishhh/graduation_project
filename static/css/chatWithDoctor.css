@@ -1,0 +1,148 @@
+.main {
+    margin: 150px 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-sec {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-sec img {
+    width: 80%;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stars {
+    width: 150px;
+}
+.info p {
+    font-size: 20px;
+}
+.loc {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.go-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.go-center h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+.go-center .gray {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    color: #848484;
+}
+.loc img {
+    height: 50px;
+}
+.blue-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3D80FF;
+}
+.chat {
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-header img {
+    width: 40px;
+}
+.chat-header h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+
+    color: #000000;
+}
+.chat-window {
+    background: #EDECEE;
+    border: 3px solid #3D80FF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 200px;
+}
+.dd {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.dd-sec {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    background: #3D80FF;
+    border-radius: 30px 30px 0px 30px;
+    margin: 30px 15px 0 0;
+}
+.priv {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.priv-sec {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    background: #848484;
+    border-radius: 30px 30px 30px 0px;
+    margin: 30px 0 0 15px;
+}
+.chat-form form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.chat-form form img{
+    width: 45px;
+}
+
+.chat-form form input {
+    background: #FFFFFF;
+    border: 2px solid #3D80FF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 30vw;
+}
+@media screen and (max-width: 768px) {
+    .chat-form form input {
+        width: 70vw;
+    }
+    .main {
+        margin: 30px 0;
+    }
+    .go-center h2 {
+        font-weight: 700;
+        font-size: 56px;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/chatWithUser.css">
+    <title>Dariger</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" alt="logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 first-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="doctors.html">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Medical Centers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex sec-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button class="get-started">Get Started</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main">
+    <div class="container row main-sec">
+        <div class="col-xl-5 info">
+            <div class="img-sec mb-4">
+                <img class="center-img" src="images/profile-user.png" alt="">
+            </div>
+        </div>
+        <div class="col-xl-7 go-center">
+            <h2>Алиби Семейхан</h2>
+            <div class="user-info mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labanim id est laborum.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="chat">
+        <div class="chat-header mb-3">
+            <h3>Чат с врачом</h3>
+            <img src="images/film.svg" alt="">
+        </div>
+        <div class="chat-window">
+            <div class="priv">
+                <div class="priv-sec">Добрый день!</div>
+            </div>
+            <div class="dd">
+                <div class="dd-sec">Приветствую!</div>
+            </div>
+        </div>
+        <div class="chat-form mt-3">
+            <form>
+                <div class="">
+                    <input placeholder="Введите сообщение" type="message" class="form-control" id="message" aria-describedby="message">
+                </div>
+                <a href="chatWithDoctor.html">
+                    <img src="images/send.svg" alt="send">
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Пациенту</p></li>
+                    <li><a href="">Врачи</a></li>
+                    <li><a href="">Медцентры</a></li>
+                    <li><a href="">Специализации</a></li>
+                    <li><a href="">Задать вопрос врачу</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Врачу</p></li>
+                    <li><a href="">Личный кабинет</a></li>
+                    <li><a href="">Профинформация</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <li><p class="black">Медцентр</p></li>
+                    <li><a href="">Данные медцентра</a></li>
+                    <li><a href="">Врачи медцентра</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <p>
+                    Есть ошибка? Сообщите нам <br><br>
+                    *Вся информация на сайте носит информационный характер и опубликована
+                    в целях информирования пользователей о возможности оказания медицинской помощи
+                    и медицинских услуг пациенту. Для постановки диагноза, выявления возможных
+                    противопоказаний и назначения лечения, необходима очная консультация с врачом.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

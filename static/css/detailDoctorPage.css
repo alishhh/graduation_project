@@ -1,0 +1,337 @@
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stars {
+    width: 150px;
+}
+.photo p {
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 20px;
+    color: #3D80FF;
+}
+.info h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+.info .gray {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    color: #848484;
+}
+.loc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.loc img {
+    height: 50px;
+}
+.loc .blue-text {
+    color: #3D80FF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.map-sec {
+    display: flex;
+    align-items: center;
+}
+.price-info {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px;
+}
+.price-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.price {
+    margin-left: 15px;
+    color: #3D80FF;
+}
+.price-sec button{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    color: white;
+    background: #3D80FF;
+    border-radius: 24.5px;
+}
+
+
+.about {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.about h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.about p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.schedule {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.schedule h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ferial {
+    background: #3D80FF;
+    border-radius: 20px;
+    color: white;
+    padding: 18px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+
+.ferial p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+.holiday {
+    background: #FFFFFF;
+    border: 3px solid #3D80FF;
+    border-radius: 20px;
+    padding: 18px 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+}
+.holiday p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+}
+.gray {
+    color: gray;
+}
+
+
+.ill {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+}
+.ill h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.ill ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+}
+
+.otziv {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 30px;
+}
+.otziv .more {
+    width: 50%;
+    margin: 0 auto;
+}
+.o-header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.o-info h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.o-info p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #848484;
+}
+.o-types {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.plus, .minus {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+}
+.all {
+    padding: 12px 30px;
+    background: #3D80FF;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+.plus {
+    padding: 8px 30px;
+
+    border: 1px solid #A3DB5C;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #A3DB5C;
+
+}
+.plus img, .minus img {
+    margin-left: 10px;
+}
+.minus {
+    padding: 8px 30px;
+
+    border: 1px solid #B40000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #B40000;
+}
+.o-body {
+    background: #d6e5cc;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.enter-o {
+    background: #3D80FF;
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+.otziv .enter-o {
+    width: 50%;
+    margin: 0 auto;
+}
+.more {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 2px solid #3D80FF;
+}
+@media screen and (max-width: 768px) {
+    .map-sec {
+        flex-direction: column;
+    }
+    .price-info {
+        margin-top: 30px;
+    }
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+    .second {
+        flex-direction: column;
+    }
+    .ferial {
+        padding: 18px 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .holiday {
+        padding: 18px 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .o-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .o-types {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .all {
+        padding: 12px 30px;
+        background: #3D80FF;
+        border-radius: 20px;
+        color: white;
+        width: 85%;
+        align-self: center;
+        margin-top: 20px;
+    }
+    .plus {
+        padding: 8px 30px;
+        margin-top: 15px;
+        border: 1px solid #A3DB5C;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: #A3DB5C;
+
+    }
+    .plus img, .minus img {
+        margin-left: 0;
+    }
+    .minus {
+        padding: 8px 30px;
+        margin: 15px 0 0 0;
+        border: 1px solid #B40000;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: #B40000;
+    }
+
+}

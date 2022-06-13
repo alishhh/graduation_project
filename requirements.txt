@@ -1,32 +1,19 @@
 fastapi
 uvicorn
-
-#for databases
 sqlalchemy
 psycopg2
-
-# for env var
 python-dotenv
-
-#for email validation
 pydantic[email]
-
-#hashing
-passlib[bcrypt]
-
-#for testing       
+passlib[bcrypt]   
 pytest
 requests
 pytest-cov==2.11.1
-
-#for jwt tokens
 python-jose
-
-#for form data
 python-multipart
-
-#for template
 jinja2
+<<<<<<< HEAD
 
 #for static files
+=======
+>>>>>>> d6175ca6bcf209a45a7057816b2cbb7ad9317170
 aiofiles

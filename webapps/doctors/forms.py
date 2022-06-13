@@ -9,17 +9,25 @@ class DoctorCreateForm:
         self.request: Request = request
         self.errors: List = []
         self.fullname: Optional[str] = None
-        self.company: Optional[str] = None
-        self.company_url: Optional[str] = None
-        self.location: Optional[str] = None
+        self.qualif: Optional[str] = None #do
+        self.experience: Optional[str] = None  # do
+        self.shedule: Optional[str] = None  # do
+        self.services: Optional[str] = None  # do
+        self.type: Optional[str] = None
+        self.salary: Optional[str] = None   #company_url
+        self.tod: Optional[str] = None  #location
         self.description: Optional[str] = None
 
     async def load_data(self):
         form = await self.request.form()
         self.fullname = form.get("fullname")
-        self.company = form.get("company")
-        self.company_url = form.get("company_url")
-        self.location = form.get("location")
+        self.qualif = form.get("qualif")
+        self.experience = form.get("experience")
+        self.shedule = form.get("shedule")
+        self.services = form.get("services")
+        self.type = form.get("type")
+        self.salary = form.get("salary")   #company_url
+        self.tod = form.get("tod")  #location
         self.description = form.get("description")
 
     def is_valid(self):

@@ -7,9 +7,13 @@ from db.base_class import Base
 class Doctor(Base):
     id = Column(Integer,primary_key=True,index=True)
     fullname = Column(String,nullable=False)
-    company = Column(String,nullable=False)
-    company_url = Column(String)
-    location = Column(String,nullable=False)
+    qualif = Column(String, nullable=False) #do
+    experience = Column(String, nullable=False)  # do
+    shedule = Column(String, nullable=False)  # do
+    services = Column(String, nullable=False)  # do
+    type = Column(String,nullable=False)   #company
+    salary = Column(String)  #company_url
+    tod = Column(String,nullable=False) #location
     description = Column(String)
     date_posted = Column(Date)
     is_active = Column(Boolean(),default = True)

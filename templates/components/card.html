@@ -19,8 +19,9 @@
         <p class="blue-text">(173 отзыва)</p>
     </div>
     <div class="col-xl-5 profile-flex">
-        <p class="name mb-1">{{obj.fullname}}</p>
-        <p class="mb-3 gray-text">{{obj.company}}</p>
+        <p class="name mb-1">{{obj.fullname}}</p><br>
+        <p class="mb-3 gray-text">{{obj.type}}</p><br>
+
         <div class="location">
             <img src="{{ url_for('static', path='/images/location.svg') }}" alt="">
             <p>Медицинский Центр "Emirmed"
@@ -28,17 +29,18 @@
         </div>
     </div>
     <div class="col-xl-5">
-        <form action="">
-            <input  class="form-control" type="datetime-local" placeholder="Выберите время">
-        </form>
+
 <!--        <p class="card-text">О враче: {{obj.description[:60]}}</p>-->
-        <p class="card-text">Лечение заболеваний: {{obj.location}}</p>
+        <p class="card-text">Лечение заболеваний: {{obj.tod}}</p><br>
+        <p class="card-text">Квалификация: {{obj.qualif}}</p><br>
+        <p class="card-text">График работы: {{obj.shedule}}</p><br>
         <div class="price-sec">
             <p>Cтоимость приема:</p>
-            <p class="blue-text">{{obj.company_url}}</p>
+            <p class="blue-text">{{obj.salary}}</p><br>
         </div>
+         <br><a href="/detail/{{obj.id}}" class="btn btn-primary">Read More</a>
     </div>
-     <a href="/detail/{{obj.id}}" class="btn btn-primary">Read More</a>
+
 </div>
 
 </body>

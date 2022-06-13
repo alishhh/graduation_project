@@ -1,13 +1,24 @@
-{% extends "shared/base.html" %}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/signup.css') }}">
+    <title>Login</title>
+</head>
+<body>
 {% block title %}
   <title>Login</title>
 {% endblock %}
 
 {% block content %}
-  <div class="container">
+  <div class="main">
+     <img src="{{ url_for('static', path='/images/logo.svg') }}" alt="">
     <div class="row">
-      <h5 class="display-5">Login to Dariger</h5>
+
       <div class="text-danger font-weight-bold">
           {% for error in errors %}
             <li>{{error}}</li>
@@ -26,16 +37,31 @@
 
     <div class="row my-5">
       <form method="POST">
-        <div class="mb-3">
-          <label>Email</label>
-          <input type="text" required placeholder="Your email" name="email" value="{{email}}" class="form-control">
+<!--        <div class="mb-3">-->
+<!--          <label>Email</label>-->
+<!--          <input type="text" required placeholder="Your email" name="email" value="{{email}}" class="form-control">-->
+<!--        </div>-->
+        <div class="mb-3 text-input">
+            <label for="exampleInputEmail1" class="form-label">Email</label><br>
+            <input type="text" required class="form-control" required placeholder="Your email" name="email" value="{{email}}" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <div class="mb-3">
-          <label>Password</label>
-          <input type="password" required placeholder="Choose a secure password" value="{{password}}" name="password" class="form-control">
+<!--        <div class="mb-3">-->
+<!--          <label>Password</label>-->
+<!--          <input type="password" required placeholder="Choose a secure password" value="{{password}}" name="password" class="form-control">-->
+<!--        </div>-->
+        <div class="mb-3 text-input">
+            <label for="exampleInputPassword1" class="form-label">Password</label><br>
+            <input type="password" required class="form-control" required placeholder="Choose a secure password" value="{{password}}" name="password" id="exampleInputPassword1">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" href="http://127.0.0.1:8000/">Submit</button>
       </form>
     </div>
   </div>
   {% endblock %}
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+
+
+
+

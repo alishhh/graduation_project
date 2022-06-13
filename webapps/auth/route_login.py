@@ -25,10 +25,21 @@ async def login(request : Request,db : Session = Depends(get_db)):
             form.__dict__.update(msg="Login Successful :)")
             response = templates.TemplateResponse("auth/login.html", form.__dict__)
             login_for_access_token(response=response,form_data=form,db=db)
-            return response
+            #return response
+            return templates.TemplateResponse("other/homepagevs.html", {"request": request})
+
         except HTTPException:
             form.__dict__.update(msg="")
             form.__dict__.get("errors").append("Incorrect email or password")
             return templates.TemplateResponse("auth/login.html",form.__dict__)
     return templates.TemplateResponse("auth/login.html",form.__dict__)
-    
+
+
+@router.get("/homevs/")
+def homevs(request : Request):
+    return templates.TemplateResponse("other/homepagevs.html",{"request":request})
+
+
+@router.get("/medcenters/")
+def medcenters(request : Request):
+    return templates.TemplateResponse("other/medcenters.html",{"request":request})

@@ -9,13 +9,13 @@ class DoctorCreateForm:
         self.request: Request = request
         self.errors: List = []
         self.fullname: Optional[str] = None
-        self.qualif: Optional[str] = None #do
-        self.experience: Optional[str] = None  # do
-        self.shedule: Optional[str] = None  # do
-        self.services: Optional[str] = None  # do
+        self.qualif: Optional[str] = None
+        self.experience: Optional[str] = None
+        self.shedule: Optional[str] = None
+        self.services: Optional[str] = None
         self.type: Optional[str] = None
-        self.salary: Optional[str] = None   #company_url
-        self.tod: Optional[str] = None  #location
+        self.salary: Optional[str] = None
+        self.tod: Optional[str] = None
         self.description: Optional[str] = None
 
     async def load_data(self):
@@ -26,8 +26,8 @@ class DoctorCreateForm:
         self.shedule = form.get("shedule")
         self.services = form.get("services")
         self.type = form.get("type")
-        self.salary = form.get("salary")   #company_url
-        self.tod = form.get("tod")  #location
+        self.salary = form.get("salary")
+        self.tod = form.get("tod")
         self.description = form.get("description")
 
     def is_valid(self):

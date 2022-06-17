@@ -43,3 +43,14 @@ def homevs(request : Request):
 @router.get("/medcenters/")
 def medcenters(request : Request):
     return templates.TemplateResponse("other/medcenters.html",{"request":request})
+
+
+
+@router.get("/rec/")
+def rec(request : Request):
+    return templates.TemplateResponse("other/rec.html",{"request":request})
+
+
+@router.get("/de/")
+def de(request : Request):
+    return templates.TemplateResponse("other/doctorexmpl.html",{"request":request})

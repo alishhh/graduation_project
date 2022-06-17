@@ -1,19 +1,19 @@
 fastapi
 uvicorn
+jinja2
+aiofiles
 sqlalchemy
 psycopg2
 python-dotenv
 pydantic[email]
-passlib[bcrypt]   
+passlib[bcrypt]
 pytest
 requests
-pytest-cov==2.11.1
 python-jose
+pre-commit
 python-multipart
-jinja2
-<<<<<<< HEAD
-
-#for static files
-=======
->>>>>>> d6175ca6bcf209a45a7057816b2cbb7ad9317170
-aiofiles
+databases
+databases[sqlite]
+asyncpg
+aiosqlite
+seedir

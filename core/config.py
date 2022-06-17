@@ -23,3 +23,6 @@ class Settings:
     TEST_USER_EMAIL = "test@example.com"
     
 settings = Settings()
+
+
+#"postgresql://postgres:1234@localhost:5432/postgres"
